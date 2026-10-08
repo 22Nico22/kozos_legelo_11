@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jorgensen-Botos Nicolay Lucas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="oldal">
+    <header class="felso-sav">
+      <div class="logo"><span class="logo-jel">✳</span> A közös legelő</div>
+      <nav class="menu" aria-label="Fő navigáció">
+        <a href="index.html">1. Kezdet</a>
+        <a href="dontes.html">2. Döntés</a>
+        <a href="kovetkezmeny.html">3. Következmény</a>
+        <a href="reflexio.html" class="aktiv">4. Mit tennél?</a>
+      </nav>
+    </header>
+
+    <section class="fejlec">
+      <div class="fejlec-szoveg">
+        <p class="cimke">4. állomás · véleményalkotás</p>
+        <h1>Mit tennél a gazdák helyében?</h1>
+        <p>A döntéseknek egyszerre van egyéni és közös következményük. Az űrlapon nincs egyetlen kötelező „jó válasz”: indokold meg az álláspontodat.</p>
+      </div>
+      <div class="fejlec-doboz"><strong>Te jössz</strong><span>Válassz, mérlegelj, érvelj.</span></div>
+    </section>
+
+    <nav class="fulek" aria-label="Állomások">
+      <a href="index.html">Kezdet</a>
+      <a href="dontes.html">Döntés</a>
+      <a href="kovetkezmeny.html">Következmény</a>
+      <a href="reflexio.html" class="aktiv">Reflexió</a>
+    </nav>
+
+    <main class="tartalom">
+      <section class="kartya">
+        <h2>Rövid gondolatkísérlet</h2>
+        <p>Az űrlap a HTML-elemek gyakorlására készült. A válaszokat az oldal nem értékeli és nem menti el.</p>
+        <form action="reflexio.html" method="get">
+          <fieldset>
+            <legend>1. Mi segíthetett volna megelőzni a legelő túlterhelését?</legend>
+            <label><input type="radio" name="megoldas" value="megallapodas" required> A gazdák előre megállapodnak az állatok számáról.</label>
+            <label><input type="radio" name="megoldas" value="kulon"> Mindenki külön dönt, és később figyelik a legelőt.</label>
+            <label><input type="radio" name="megoldas" value="mas"> Más megoldást javasolnék.</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. Mit kellene mérlegelniük? Többet is jelölhetsz.</legend>
+            <label><input type="checkbox" name="szempont" value="fu"> Mennyi fű tud újranőni?</label>
+            <label><input type="checkbox" name="szempont" value="hatas"> Hogyan hat egy döntés a többi gazdára?</label>
+            <label><input type="checkbox" name="szempont" value="tej"> Mennyi tejhez jutnak később?</label>
+          </fieldset>
+
+          <label class="mezo" for="indok">3. Indokold meg a javaslatodat 2–3 mondatban!
+            <textarea id="indok" name="indok" rows="4" placeholder="Szerintem azért lenne érdemes..."></textarea>
+          </label>
+
+          <p class="megjegyzes">A gomb csak újratölti ezt az oldalt. Nincs háttérrendszer vagy automatikus kiértékelés; a választ az órán beszéljétek meg.</p>
+          <button class="gomb" type="submit">Űrlap kipróbálása</button>
+        </form>
+      </section>
+      <aside class="oldalsav">
+        <h2>Beszélgetéshez</h2>
+        <ul>
+          <li>Miért tűnt jó döntésnek a második tehén?</li>
+          <li>Mikor változott meg az egyéni és a közös érdek viszonya?</li>
+          <li>Milyen szabályt tartanál igazságosnak?</li>
+        </ul>
+      </aside>
+    </main>
+
+    <div class="gombsor">
+      <a class="gomb vissza" href="kovetkezmeny.html">← Előző oldal</a>
+      <a class="gomb" href="index.html">Történet újraolvasása ↺</a>
+    </div>
+
+    <footer>A történet forrása: Zöld Föld, szakképzés 9–10., 12–13. oldal. Tanórai feldolgozás, saját megfogalmazásban.</footer>
+  </div>
+</body>
+</html>
